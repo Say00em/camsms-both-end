@@ -67,4 +67,11 @@ class CategoryContactController extends Controller
         $contact->save();
         return back()->with('success', 'Contact created successfully');
     }
+
+    // public function contact_delete($id)
+    // {
+    //     $contact = Contact::find($id);
+    //     $contact->delete();
+    //     return back()->with('success', 'Contact deleted successfully');
+    // }
 }

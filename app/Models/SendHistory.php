@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class SendHistory extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['number', 'type', 'message', 'category_id'];
+    
     public function category()
     {
         return $this->belongsTo(Category::class);

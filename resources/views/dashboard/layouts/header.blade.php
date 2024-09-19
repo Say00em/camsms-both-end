@@ -144,7 +144,7 @@
                         </ul>
                     </li> -->
 
-                    <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
+                    {{-- <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="ti-world"></i>
                             <span class="nav-text">Invoice</span>
                         </a>
@@ -153,15 +153,15 @@
                             <li><a href="#">View</a></li>
                             <li><a href="{{ route('invoice.history') }}">History</a></li>
                         </ul>
-                    </li>
+                    </li> --}}
 
                     <li><a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                             <i class="ti-world"></i>
                             <span class="nav-text">SMS</span>
                         </a>
                         <ul aria-expanded="false">
-                            <li><a href="#">Configuration</a></li>
-                            <li><a href="#">Send SMS</a></li>
+                            <li><a href="{{ route('sms.config') }}">Configuration</a></li>
+                            <li><a href="{{ route('sms.send') }}">Send SMS</a></li>
                             <li><a href="{{ route('sms.history') }}">History</a></li>
                         </ul>
                     </li>
